@@ -1,0 +1,5 @@
+<launch>
+  <node name="controller" pkg="mdynamix" type="controller.py" output="screen"/>
+  <node name="watchdog" pkg="mdynamix" type="watchdog.py" output="screen"/>
+
+</launch>
