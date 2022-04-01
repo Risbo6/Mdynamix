@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="mdynamix" type="logitech_g29.py" name="logitech_g29" output="screen"></node>
+  <node pkg="mdynamix" type="polygon.py" name="polygon" output="screen"></node>
+  <node pkg="mdynamix" type="trajectory.py" name="trajectory" output="screen"></node>
+  <node pkg="mdynamix" type="drive_assist.py" name="drive_assist" output="screen"></node>
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find mdynamix)/rviz/mdynamix.rviz" />
+</launch>
